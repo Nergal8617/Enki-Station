@@ -374,22 +374,6 @@ mission "jump drive study"
 		fail
 	
 
-mission "warp drive study"
-	landing
-	invisible
-	source "Enki Station"
-	to offer
-		has "event: jump drive"
-	on offer
-		conversation
-			`	"Captain <last>, I have finally managed to reverse engineer that marvelous piece of alien tech you brought me. While studying it I was struck by the thought that carrying both a jump drive and a normal hyper drive, while possible, would eat up valuable space in a ship's hull so I began to ponder whether it would be possible to engineer a drive that had the characteristics of both. Now that I have successfully managed to reproduce the Jump Drive I will now devote all research to combining the device with a normal hyperdrive."`
-			choice
-				`	"Nice, go for it"`
-					accept
-	on accept
-		event "warp drive" 30
-		fail
-
 mission "cloaking device study"
 	landing
 	invisible

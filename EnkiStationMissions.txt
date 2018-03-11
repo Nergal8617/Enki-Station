@@ -103,7 +103,7 @@ mission "gather licenses"
 					defer
 		
 mission "pay for licenses"
-	name "Pay for licenses"
+	name "Pay for human licenses"
 	landing
 	source "Earth"
 	destination "Enki Station"
@@ -135,7 +135,7 @@ mission "gather Hai license"
 		has "pay for licenses: done"
 	on offer
 		conversation
-			`Ereshkigal contacts you as soon as you step off the <ship>, "Captain <last>, I've been following your progress as well as I can from here and it seems you have encountered an alien race with some advanced technology. I would very much like to acquire their schematics if at all possible, do you think they would be willing to sell us the necessary information and equipment?"`
+			`Ereshkigal contacts you as soon as you step off the <ship>, "Captain <last>, I've been following your progress as well as I can from here and it seems you have encountered an alien race with some advanced technology. I would very much like to acquire their schematics if at all possible, do you think the Hai would be willing to sell us the necessary information and equipment?"`
 			choice
 				`	"Maybe, I can ask; the worst they can do is say no."`
 						accept
@@ -181,7 +181,7 @@ mission "gather Remnant license"
 		has "license: Remnant"
 	on offer
 		conversation
-			`"Captain <last>, I understand you have met a new group of... well, not aliens precisely, but humans with a different tech base. I would like you to try and arrange the purchase of schematics and equipment to upgrade the shipyard and outfitter."`
+			`"Captain <last>, I understand you have met a new group of... well, not aliens precisely, but humans with a different tech base. I would like you to try and arrange the purchase of Remnant schematics and equipment to upgrade the shipyard and outfitter."`
 			choice
 				`	"I think I can do that."`
 					accept
@@ -244,21 +244,12 @@ mission "gather Wanderer license"
 		has "Wanderers: Sestor: Final: done"
 	on offer
 		conversation
-			`"You've been busy Captain <last>, I understand you have access to some very nice alien technology. Do you think you can arrange another upgrade for the shipyard with your new friends?"`
+			`"You've been busy Captain <last>, I understand you have access to some very nice alien technology. Do you think you can arrange another upgrade for the shipyard with your new  Wanderer friends?"`
 			choice
 				`	"Probably, I'll give it a shot but some of this tech we can't sell to the general public even if I do manage to get clearance for it.  It's just too destructive to have floating around in the open, there would be no way to keep it out of the hands of criminals even if we don't sell it to them."`
 					accept
 				`	"I don't think that would be a good idea, too much chance of it falling into the wrong hands."`
 					fail
-					
-ship "Deep River" "Deep River (JD)"
-	outfits
-		"White Sun Reactor"
-		"Dark Storm Shielding" 3
-		"Fuel Pod"
-		"Type 2 Radiant Thruster"
-		"Type 4 Radiant Steering"
-		"Jump Drive"
 
 mission "escort4"
 	name "Escort the freighter back to <planet>."
@@ -282,7 +273,7 @@ mission "escort4"
 				fail "gather Wanderer license"
 	npc accompany save
 		personality escort timid
-		ship "Deep River (JD)" "Gorgon"
+		ship "Deep River (Jump)" "Gorgon"
 	on complete
 		conversation
 			`The corridor outside the AI core is starting to be very familiar. A new set of schematics to install, just have to be sure to remind Ereshkigal that some of this stuff cannot be made available to anyone other than you. The equipment install should take about a week, unfortunately because of the restricted nature of so much of this tech you don't expect to see much of a profit increase this time.`
@@ -299,7 +290,7 @@ mission "gather Coalition license"
 		has "Coalition: Contributor: done"
 	on offer
 		conversation
-			`"Captain <last>, you do seem to have a penchant for discovering new alien species, three at once this time.  Do you think you can manage to get access to their tech so we can upgrade the shipyard?"`
+			`"Captain <last>, you do seem to have a penchant for discovering new alien species, three at once this time.  Do you think you can manage to get access to Coalition tech so we can upgrade the shipyard?"`
 			choice
 				`	"I don't know, these guys won't give me access to anything but their civilian tech. No weapons or warships have been made available to me. I can probably get authorization for the civilian stuff but don't get your hopes up for military hardware."`
 					accept
@@ -381,7 +372,7 @@ mission "cloaking device study"
 		conversation
 			`"Captain <last>, I think I'm detecting alien technology on your ship. It is hard for me to be sure since it seems to be very hard to detect, in fact the only reason I know it's there is because it is causing a hole in my sensor coverage that shouldn't be there. What is it?"`
 			choice
-				`	"It's a Cloaking Device that I got from the Syndicate, I want you to try to reverse engineer it so we can produce more. But no selling them to anyone else if you do manage it, I don't want anyone else to have the kind of advantage that this thing gives me."`
+				`	"It's a Cloaking Device that I picked up, I want you to try to reverse engineer it so we can produce more. But no selling them to anyone else if you do manage it, I don't want anyone else to have the kind of advantage that this thing gives me."`
 					accept
 				`	"It's called a Cloaking Device and I would love to be able to give it to you for study but I need it right now, maybe later."`
 					defer

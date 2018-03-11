@@ -40,6 +40,7 @@ mission "find Enki Station"
 		
 mission "restore power"
 	name "Repair Enki Station reactor"
+	descripton "Now that Enki Station's backup power plant is active, head to <destination> and escort the freighter back to finish repairs."
 	landing
 	source "Enki Station"
 	destination "Glaze"
@@ -69,6 +70,7 @@ mission "restore power"
 
 mission "escort1"
 	name "Freighter escort to <planet>"
+	description "Escort the <npc> back to <destination>."
 	landing
 	source "Glaze"
 	destination "Enki Station"
@@ -104,6 +106,7 @@ mission "gather licenses"
 		
 mission "pay for licenses"
 	name "Pay for human licenses"
+	description "Pay for the licenses on Earth and get the schematics back to <destination>."
 	landing
 	source "Earth"
 	destination "Enki Station"
@@ -126,6 +129,7 @@ mission "pay for licenses"
 		
 mission "gather Hai license"
 	name "Hai license from <[planet>"
+	description "Travel to <destination> and pay for schematics to upgrade Enki Station."
 	landing
 	clearance
 	source "Enki Station"
@@ -144,6 +148,7 @@ mission "gather Hai license"
 
 mission "escort2"
 	name "Escort freighter to <planet>"
+	description "Escort the <npc> back to <destination>."
 	landing
 	source "Hai-home"
 	destination "Enki Station"
@@ -174,6 +179,7 @@ mission "escort2"
 
 mission "gather Remnant license"
 	name "Remnant license from <planet>"
+	description "Travel to <destination> and pay for schematics to upgrade Enki Station."
 	landing
 	source "Enki Station"
 	destination "Aventine"
@@ -208,6 +214,7 @@ ship "Bulk Freighter" "Bulk Freighter (keystone)"
 
 mission "escort3"
 	name "Escort freighter to <[planet>"
+	description "Escort the <npc> back to <destination>."
 	landing
 	source "Aventine"
 	destination "Enki Station"
@@ -237,6 +244,7 @@ mission "escort3"
 
 mission "gather Wanderer license"
 	name "Wanderer license from <planet>"
+	description "Travel to <destination> and pay for schematics to upgrade Enki Station."
 	landing
 	source "Enki Station"
 	destination "Vara K'chrai"
@@ -253,6 +261,7 @@ mission "gather Wanderer license"
 
 mission "escort4"
 	name "Escort the freighter back to <planet>."
+	description "Escort the <npc> back to <destination>."
 	landing
 	source "Vara K'chrai"
 	destination "Enki Station"
@@ -283,6 +292,7 @@ mission "escort4"
 
 mission "gather Coalition license"
 	name "Coalition license from <planet>"
+	description "Travel to <destination> and pay for schematics to upgrade Enki Station."
 	landing
 	source "Enki Station"
 	destination "Ring of Friendship"
@@ -314,6 +324,7 @@ ship "Bulk Freighter" "Bulk Freighter (JD)"
 
 mission "escort5"
 	name "Escort freighter back to <planet>
+	description "Escort the <npc> back to <destination>."
 	landing
 	source "Ring of Friendship"
 	destination "Enki Station"
